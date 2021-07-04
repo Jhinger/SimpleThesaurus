@@ -45,7 +45,7 @@ const Search = ({ setWord, setInput, setError }) => {
     
     const getWordData = () => {
         setError(false)
-        fetch(`https://www.dictionaryapi.com/api/v3/references/thesaurus/json/${change}?key=bdcc9e39-c81b-4e11-9d39-0c8f493b564e`)
+        fetch(`https://www.dictionaryapi.com/api/v3/references/thesaurus/json/${change}?key=`)
             .then((response) => {
                 response.json().then((data) => {
                     console.log(data)
