@@ -20,8 +20,8 @@ const App = () => {
     <AppStyles>
 		<Header/>
 		<Search setWord={setWord} setError={setError} setInput={setInput}/>
-		{word && input ? console.log(word) : console.log("Input: " + input + " Error: " + error)}
-		<WordCard word={word}/>
+		{word && input ? <WordCard word={word}/> : console.log("Input: " + input + " Error: " + error)}
+		
 	</AppStyles>
   );
 }

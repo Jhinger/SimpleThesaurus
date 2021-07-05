@@ -3,7 +3,7 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const SearchStyles = styled.div`
-    width: 50%;
+    width: 50rem;
     height: 3rem;
     background-color: white;
     display: flex;
@@ -40,16 +40,17 @@ const SearchStyles = styled.div`
     }
 `;
 
+// API does not return JSON errors, only empty arrays.
 const Search = ({ setWord, setInput, setError }) => {
     const [change, setChange] = useState('')
     
     const getWordData = () => {
         setError(false)
-        fetch(`https://www.dictionaryapi.com/api/v3/references/thesaurus/json/${change}?key=`)
+        fetch(`https://www.dictionaryapi.com/api/v3/references/thesaurus/json/${change}?key=bdcc9e39-c81b-4e11-9d39-0c8f493b564e`)
             .then((response) => {
                 response.json().then((data) => {
                     console.log(data)
-                    if (data.length === 0 || response.status !== 200) {
+                    if (data.length === 0 || typeof data[0] === "string" || response.status !== 200) {
                         setError(true)
                         return false;
                     }

@@ -23,7 +23,7 @@ const NavStyles = styled.div`
 
 const Nav = () => {
     const handleRedirect = () => {
-        window.location = 'https://github.com/Jhinger'
+        window.location = 'https://github.com/Jhinger/SimpleThesaurus'
     }
 
     return (
