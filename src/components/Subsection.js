@@ -33,27 +33,29 @@ const SubsectionStyled = styled.div`
     .btn1 {
         background-color: #CAFCFE;
         box-shadow: 0.5px 0.5px 0.35rem #888888;
-        border-radius: 2px;
+        font-size: 0.9rem;
+        border-radius: 6px;
         outline: none;
         margin: 0.6rem 0.3rem 0.6rem 0.3rem;
         border: none;
         text-align: center;
         text-decoration: none;
         width: auto;
-        height: 1.5rem;
+        height: 2rem;
     }
 
     .btn2 {
         background-color: #FECACA;
         box-shadow: 0.5px 0.5px 0.35rem #888888;
-        border-radius: 2px;
+        font-size: 0.9rem;
+        border-radius: 6px;
         outline: none;
         margin: 0.6rem 0.3rem 0.6rem 0.3rem;
         border: none;
         text-align: center;
         text-decoration: none;
         width: auto;
-        height: 1.5rem;
+        height: 2rem;
     }
 `;
 

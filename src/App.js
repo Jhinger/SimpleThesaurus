@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 import Search from './components/Search'
 import WordCard from './components/WordCard'
+import ErrorCard from './components/ErrorCard'
 import styled from 'styled-components'
 
 const AppStyles = styled.div`
@@ -19,6 +20,7 @@ const App = () => {
   return (
     <AppStyles>
 		<Header/>
+		{error ? <ErrorCard /> : null}
 		<Search setWord={setWord} setError={setError} setInput={setInput}/>
 		{word && input ? <WordCard word={word}/> : console.log("Input: " + input + " Error: " + error)}
 		

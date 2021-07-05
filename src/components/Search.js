@@ -73,7 +73,6 @@ const Search = ({ setWord, setInput, setError }) => {
     const handleSubmit = e => {
         e.preventDefault();
         getWordData()
-        console.log(change)
     }
 
     return (
