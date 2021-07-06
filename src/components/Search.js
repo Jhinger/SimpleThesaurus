@@ -3,7 +3,8 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const SearchStyles = styled.div`
-    width: 50rem;
+    width: 50vw;
+    max-width: 50rem;
     height: 3rem;
     background-color: white;
     display: flex;

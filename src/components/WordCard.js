@@ -2,7 +2,8 @@ import Subsection from './Subsection'
 import styled from "styled-components";
 
 const WordCardStyled = styled.div`
-    width: 70rem;
+    width: 70vw;
+    max-width: 70rem;
     height: auto;
     background-color: white;
     margin: 3rem;
