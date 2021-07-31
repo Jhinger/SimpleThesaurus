@@ -14,16 +14,15 @@ const AppStyles = styled.div`
 
 const App = () => {
   const [word, setWord] = useState('')		// Store word that user searches.
-  const [error, setError] = useState(false) // Check to see if we got an empty object. 
-  const [input, setInput] = useState(false) //Check to see if user has searched for a word. (Conditional Rendering)
+  const [error, setError] = useState(false) 	// Check to see if we got an empty object. 
+  const [input, setInput] = useState(false) 	//Check to see if user has searched for a word. (Conditional Rendering)
 
   return (
-    <AppStyles>
+    	<AppStyles>
 		<Header/>
 		{error ? <ErrorCard /> : null}
 		<Search setWord={setWord} setError={setError} setInput={setInput}/>
-		{word && input ? <WordCard word={word}/> : console.log("Input: " + input + " Error: " + error)}
-		
+		{word && input ? <WordCard word={word}/> : console.log("Input: " + input + " Error: " + error)}		
 	</AppStyles>
   );
 }
