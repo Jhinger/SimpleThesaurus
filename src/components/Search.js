@@ -41,7 +41,7 @@ const SearchStyles = styled.div`
     }
 `;
 
-// API does not return JSON errors, only empty arrays.
+// API does not return response codes, only empty arrays.
 const Search = ({ setWord, setInput, setError }) => {
     const [change, setChange] = useState('')
     
