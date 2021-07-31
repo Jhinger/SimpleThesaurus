@@ -15,7 +15,7 @@ const AppStyles = styled.div`
 const App = () => {
   const [word, setWord] = useState('')		// Store word that user searches.
   const [error, setError] = useState(false) 	// Check to see if we got an empty object. 
-  const [input, setInput] = useState(false) 	//Check to see if user has searched for a word. (Conditional Rendering)
+  const [input, setInput] = useState(false) 	// Check to see if user has searched for a word. (Conditional Rendering)
 
   return (
     	<AppStyles>
